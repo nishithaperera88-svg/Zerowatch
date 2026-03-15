@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Film App</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#111;
+color:red;
+text-align:center;
+}
+
+h1{
+margin-top:20px;
+}
+
+input{
+width:80%;
+padding:12px;
+border-radius:8px;
+border:none;
+font-size:16px;
+margin-top:20px;
+}
+
+.movie{
+background:#222;
+margin:20px;
+padding:15px;
+border-radius:10px;
+}
+
+a{
+color:white;
+text-decoration:none;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>ZERO WATCH FIND FILMS</h1>
+
+<input type="text" id="search" placeholder="Search movie..." onkeyup="searchMovie()">
+
+<div id="movies">
+
+<div class="movie">
+<a href="prewegaya.html">Prewegaya Sinhala Movie</a>
+</div>
+  
+  <div id="movies">
+
+<div class="movie">
+<a href="suwada.html"> suwada danuna jeewethe Sinhala Movie</a>
+  
+  
+</div>
+    <div id="movies">
+
+<div class="movie">
+<a href="Maya.html">Challenges Sinhala Movie</a>
+</div>
+      <div id="movies">
+
+<div class="movie">
+<a href="prewegaya.html">Prewegaya Sinhala Movie</a>
+</div>
+        <div id="movies">
+
+<div class="movie">
+<a href="prewegaya.html">Prewegaya Sinhala Movie</a>
+</div>
+    
+
+</div>
+
+<script>
+
+function searchMovie(){
+
+var input = document.getElementById("search").value.toLowerCase();
+var movies = document.getElementsByClassName("movie");
+
+for(var i=0;i<movies.length;i++){
+
+var text = movies[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+movies[i].style.display="block";
+}
+else{
+movies[i].style.display="none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

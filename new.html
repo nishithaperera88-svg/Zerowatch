@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ZeroWatch</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#000;
+    color:white;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#0a0a0a;
+    border-bottom:2px solid red;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:red;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:red;
+}
+
+/* Movies */
+
+.movies{
+    padding:30px;
+}
+
+.movies h2{
+    margin-bottom:20px;
+}
+
+/* 2 COLUMN GRID */
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* Movie Card */
+
+.movie{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.movie:hover{
+    transform:scale(1.05);
+}
+
+/* Image Fix */
+
+.movie img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.movie p{
+    padding:10px;
+    text-align:center;
+    margin:0;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    border-top:1px solid #222;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">ZeroWatch</div>
+
+<nav>
+<a href="new.html">Home</a>
+<a href="search.html">Search Movie</a>
+<a href="about.html">about</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Watch Movies on <span>ZeroWatch</span></h1>
+
+<a href="page.html">
+<button style="background:red;color:white;border:none;padding:10px 20px;font-size:16px;border-radius:6px;cursor:pointer;">
+Search and Find Films
+</button>
+</a>
+
+</section>
+
+<section class="movies">
+
+<h2>Popular Movies</h2>
+
+<div class="movie-grid">
+
+<div class="movie">
+<a href="prewegaya.html">
+<img src="prawegaya.jpg">
+<p><b>Prewegaya</b></p>
+</a>
+</div>
+
+<div class="movie">
+<a href="challenge.html">
+<img src="challenges.jpg">
+<p><b>Challenge</b></p>
+</a>
+</div>
+
+<div class="movie">
+<a href="suwada.html">
+<img src="suwada.jpg">
+<p><b>Suwada</b></p>
+</a>
+</div>
+
+<div class="movie">
+<a href="dedunuakase.html">
+<img src="dedunuakase.jpg">
+<p><b>Movie Name</b></p>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 ZeroWatch Application
+
+</footer>
+
+</body>
+</html>
