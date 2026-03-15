@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZeroWatch Login</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.login-box{
+background:#111;
+padding:40px;
+border-radius:10px;
+width:320px;
+text-align:center;
+border:2px solid red;
+}
+
+h1{
+color:red;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+outline:none;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:red;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.error{
+color:red;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>ZeroWatch</h1>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p class="error" id="error"></p>
+
+</div>
+
+<script>
+
+/* 200 USERS LIST */
+
+const users = {
+"user1":"123",
+"user2":"123",
+"user3":"123",
+"user4":"123",
+"user5":"123",
+"user6":"123",
+"user7":"123",
+"user8":"123",
+"user9":"123",
+"user10":"123",
+"user11":"123",
+"user12":"123",
+"user13":"123",
+"user14":"123",
+"user15":"123",
+"user16":"123",
+"user17":"123",
+"user18":"123",
+"user19":"123",
+"user20":"123",
+"admin":"admin"
+
+/* you can continue until user200 */
+
+};
+
+function login(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(users[user] && users[user]===pass){
+
+window.location.href="checking.html";
+
+}else{
+
+document.getElementById("error").innerText="Wrong Username or Password";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
