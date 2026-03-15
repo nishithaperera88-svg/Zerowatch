@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZeroWatch Checking</title>
+
+<style>
+
+body{
+margin:0;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+flex-direction:column;
+color:white;
+}
+
+/* Logo */
+
+.logo{
+font-size:45px;
+font-weight:bold;
+color:red;
+margin-bottom:20px;
+text-shadow:0 0 20px red;
+}
+
+/* Loader circle */
+
+.loader{
+width:80px;
+height:80px;
+border:6px solid #222;
+border-top:6px solid red;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin-bottom:20px;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* Checking text animation */
+
+.checking{
+font-size:18px;
+color:#fff;
+letter-spacing:2px;
+}
+
+.dots::after{
+content:"";
+animation:dots 1.5s steps(4,end) infinite;
+}
+
+@keyframes dots{
+0%{content:"";}
+25%{content:".";}
+50%{content:"..";}
+75%{content:"...";}
+100%{content:"";}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="logo">ZeroWatch</div>
+
+<div class="loader"></div>
+
+<div class="checking">Checking<span class="dots"></span></div>
+
+<script>
+
+setTimeout(function(){
+window.location.href="new.html";
+},4000);
+
+</script>
+
+</body>
+</html>
